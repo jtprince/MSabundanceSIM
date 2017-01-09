@@ -31,6 +31,8 @@ case_variance = 2 				# Variance increase for case samples (max lambda for Poiss
 
 ##########################
 
+srand(49999)
+
 class Integer
   def factorial
     f = 1; for i in 1..self; f *= i; end; f
@@ -148,3 +150,6 @@ sample_n = case_n + control_n
 		end
 	end
 end
+
+`mkdir /home/jtprince/tmp/original` unless File.exist?("/home/jtprince/tmp/original")
+`mv *_case *_control /home/jtprince/tmp/original/`
