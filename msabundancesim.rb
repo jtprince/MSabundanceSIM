@@ -31,7 +31,7 @@ case_variance = 2 				# Variance increase for case samples (max lambda for Poiss
 
 ##########################
 
-srand(49999)
+srand(47288)
 
 class Integer
   def factorial
