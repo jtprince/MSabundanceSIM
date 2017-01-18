@@ -120,6 +120,8 @@ while line = master_fasta.gets
 		entries << line
 	end
 end
+proteins << [entries,abundances]
+
 
 # generate which proteins will be differentially expressed
 diff_expressed_ids = [0..proteins.size-1].sample((proteins.size * diff_express_percent/100.0).to_i)
