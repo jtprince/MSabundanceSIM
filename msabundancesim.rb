@@ -124,7 +124,7 @@ proteins << [entries,abundances]
 
 
 # generate which proteins will be differentially expressed
-diff_expressed_ids = [0..proteins.size-1].sample((proteins.size * diff_express_percent/100.0).to_i)
+diff_expressed_ids = (0..proteins.size-1).to_a.sample((proteins.size * diff_express_percent/100.0).to_i)
 diff_expressed_signs = Array.new(diff_expressed_ids.size){[-1,1].sample}
 
 sample_n = case_n + control_n
