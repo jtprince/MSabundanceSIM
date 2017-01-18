@@ -140,7 +140,7 @@ sample_n = case_n + control_n
 	proteins.each_with_index do |protein, idx|
     protein_type = sample_type
 		# put first line of fasta with simulated abundance
-		sign = [1,-1].sample
+		#sign = [1,-1].sample
 		if sample_type=='case' and diff_expressed_ids.index(idx) != nil
       protein_type = 'case'
 			#sign = diff_expressed_signs[idx]
