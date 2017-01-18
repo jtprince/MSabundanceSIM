@@ -126,7 +126,7 @@ diff_expressed_ids = [0..proteins.size-1].sample((proteins.size * diff_express_p
 diff_expressed_signs = Array.new(diff_expressed_ids.size){[-1,1].sample}
 
 sample_n = case_n + control_n
-(0..sample_n).each do |n| # for each sample
+(0...sample_n).each do |n| # for each sample
 	type = "control"
 	if n < case_n # make a case sample
 		type = "case"
