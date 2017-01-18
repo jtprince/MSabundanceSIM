@@ -152,6 +152,3 @@ sample_n = case_n + control_n
 		end
 	end
 end
-
-`mkdir /home/jtprince/tmp/original` unless File.exist?("/home/jtprince/tmp/original")
-`mv *_case *_control /home/jtprince/tmp/original/`
