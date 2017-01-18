@@ -11,8 +11,8 @@
 
 ##########################
 ## PARAMETERS:
-master_fasta = File.open("9606-PA_plasma.fasta","r") # Master fasta file
-#master_fasta = File.open("test.fasta","r") # Master fasta file
+#master_fasta = File.open("9606-PA_plasma.fasta","r") # Master fasta file
+master_fasta = File.open("test.fasta","r") # Master fasta file
 
 control_n = 5 						# how many control samples to generate
 
