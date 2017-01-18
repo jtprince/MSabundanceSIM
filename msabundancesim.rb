@@ -148,7 +148,7 @@ sample_n = case_n + control_n
       protein_type = 'control'
 		end
 
-		outfile.puts "#{protein[0][0]} + ##{sample_abundance(protein[1], get_fold_change(protein[1], protein_type=='control' ? control_variance : case_variance))}"
+		outfile.puts "#{protein[0][0]} ##{sample_abundance(protein[1], get_fold_change(protein[1], protein_type=='control' ? control_variance : case_variance))}"
 		protein[0][1..-1].each do |additional_line|
 			outfile.puts additional_line
 		end
